@@ -1,0 +1,28 @@
+### System Configuration
+nThreads     6
+Verbose     true
+EarlyStop   false
+
+Models       BAPPIN;
+DataSets     LEDA-YY25
+
+BAPPIN-MaxRound     1000
+BAPPIN-RemainRatio  0.6
+BAPPIN-RandomSample 100
+BAPPIN-TopSample    100
+BAPPIN-Seed         GRAAL
+BAPPIN-Alignment    Greedy
+BAPPIN-Candidate    true
+
+### DataSet Configuration
+LEDA-Toy    data/toy/
+LEDA-YY0    data/yeast/lowconf0/
+LEDA-YY5    data/yeast/lowconf5/
+LEDA-YY10    data/yeast/lowconf10/
+LEDA-YY15    data/yeast/lowconf15/
+LEDA-YY20    data/yeast/lowconf20/
+LEDA-YY25    data/yeast/lowconf25/
+
+
+### Evaluation Configuration
+Metrics      CommonEdge;NodePrecision;ICS;S3;
