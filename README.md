@@ -8,13 +8,13 @@ Biological network alignment benefits the community by providing regions of topo
 The bootstrapping framework follows the idea that an imperfect alignment actually contains rich information for further alignment. For example, it is easy to align a node if its neighbors are already aligned. This is also true even for alignments with rather low quality or low coverage, e.g. in GRAAL the authors take advantage of seed alignment with only one pair of nodes by grouping the nodes by distances to the seed pair and aligning them within each group.
 
 In our framework, we extract the hidden information in seed alignment by generating the followings based on the seed alignment in each bootstrapping iteration: (1) candidate pairs, (2) pairwise training data and (3) pairwise features. Using these, we then learn a classification model indicating whether two nodes should be aligned. Applying it over the candidate set we generate pairwise likelihood for each candidate pair. Then we employ pairwise-score-based aligning algorithms to generate the improved alignment, which will be used as the seed alignment for next bootstrapping iteration. We show the overview in the following figure.
-![](http://apex.sjtu.edu.cn/public/files/projects/20161022/bappin.png)
+![](http://apex.sjtu.edu.cn/public/files/projects/20170121/framework.png)
 
 ## Results
 
-![](http://apex.sjtu.edu.cn/public/files/projects/20161022/result-A.png)
+![](http://apex.sjtu.edu.cn/public/files/projects/20170121/result-A.png)
 
-![](http://apex.sjtu.edu.cn/public/files/projects/20161022/result-B.png)
+![](http://apex.sjtu.edu.cn/public/files/projects/20170121/result-B.png)
 
 # Contacts
 [Xuezhi Cao](http://apex.sjtu.edu.cn/members/cxz "Xuezhi Cao")
